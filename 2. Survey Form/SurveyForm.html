@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Lato|Merriweather" rel="stylesheet">
+	
+    <link type="text/css" rel="stylesheet" href="SurveyForm.css">
+    <title>SurveyForm FCC</title>
+</head>
+<body id="body">
+    <h1 id="title"> Mortal Kombat Survey Form</h1>
+    <div class="well">
+        <p id="description"> Please fill in the following form so we can know your preferences: </p>
+        <form id="survey-form">
+            <div class="outerClass">
+             <div class="labelClass"><label id="name-label" for="name">* Name:</label></div>
+             <div class="inputClass"><input id="name" type="text" placeholder=" Enter your name" required></div>
+            </div>
+            <div class="outerClass">
+             <div class="labelClass"><label id="email-label" for="email">* Email:</label></div>
+             <div class="inputClass"><input id="email" type="email" placeholder=" Enter your Email" required></div>
+            </div>
+            <div class="outerClass">
+             <div class="labelClass"><label id="number-label" for="number">* Age:</label></div>
+             <div class="inputClass"><input id="number" type="number" placeholder=" Age" min="5/" max="55"></div>
+            </div>
+            <div class="outerClass">
+             <div class="labelClass"><label for="dropdown">Which option best describes your current role?</label></div>
+             <div class="inputClass">
+              <select id="dropdown" type="text" list="choices">
+                <datalist id="choices">
+                 <option disabled>Select an option</option>
+                 <option>ninja</option>
+                 <option>pirate</option>
+                 <option>samurai</option>
+                 <option>hoplite</option>
+                 <option>archer</option>
+                </datalist>
+              </select>
+             </div>
+            </div>   
+            <div class="outerClass">
+             <div class="labelClass"><label for="possibility">* How likely is that you would train in a different discipline ??</label></div>
+             <div class="inputClass">
+                 <div id="possibility">
+                  <input id="defin" type="radio" name="howCertain" value="Definitely"> 
+                  <label for="defin">Definitely</label>
+                  <br> 
+                  <input id="maybe" type="radio" name="howCertain" value="Maybe">
+                  <label for="maybe">Maybe</label> 
+                  <br>
+                  <input id="not-sure" type="radio" name="howCertain" value="Not sure">
+                  <label for="not-sure">Not sure</label>
+                 </div>
+             </div>
+            </div> 
+            <div class="outerClass"> 
+             <div class="labelClass"><label for="select_2">What weapon do you prefer ??</label></div>
+             <div class="inputClass">
+                 <select id="select_2" type="text" list="choices_2">
+                    <datalist id="choices_2">
+                     <option disabled selected>Select an option</option>
+                     <option>sword</option>
+                     <option>spear</option>
+                     <option>bow</option>
+                     <option>gun</option>
+                     <option>dagger</option>
+                    </datalist>
+                 </select>
+             </div>
+            </div>
+            <div class="outerClass">
+                <div class="labelClass">
+                    <label for="skillsToMaster">Skills that should be mastered before training in a weapon (Check all that apply):</label>
+                </div>
+                <div class="inputClass">
+                 <div id="skillsToMaster">
+                    <input id="Breathing" type="checkbox" name="skills" value="Breathing">
+                    <label for="Breathing">Breathing</label> 
+                    <br>
+                    <input id="Cardio" type="checkbox" name="skills" value="Cardio">
+                    <label for="Cardio">Cardio</label>
+                    <br>
+                    <input id="unarmed" type="checkbox" name="skills" value="Unarmed Fighting">
+                    <label for="unarmed">Unarmed Fighting</label> 
+                    <br>
+                    <input id="weights" type="checkbox" name="skills" value="Weightlifting">
+                    <label for="weights">Weightlifting</label> 
+                    <br>
+                    <input id="balance" type="checkbox" name="skills" value="Body Balance">
+                    <label for="balance">Body Balance</label> 
+                    <br>
+                    <input id="dexterity" type="checkbox" name="skills"value="Dexterity">
+                    <label for="dexterity">Dexterity</label> 
+                    <br>
+                    <input id="joints" type="checkbox" name="skills" value="Joints Conditioning">
+                    <label for="joints">Joints Conditioning</label> 
+                    <br>
+                    <div id="bigWordOne">
+                        <input id="extension" type="checkbox" name="skills" value="Tendons and Muscles Extension">
+                        <label id="extension-label" for="extension">Tendons and Muscles Extension</label> 
+                    </div>
+                    <input id="ligaments" type="checkbox" name="skills" value="Ligaments Flexibility">
+                    <label for="ligaments">Ligaments Flexibility</label> 
+                    <br>
+                    <input id="attention" type="checkbox" name="skills" value="Attention Heightening">
+                    <label for="attention">Attention Heightening</label>
+                    <br>
+                    <div id="bigWordTwo">
+                        <input id="inner" type="checkbox" name="skills" value="Inner body sensations and control">
+                        <label id="inner-label" for="inner">Inner body sensations and control</label>
+                    </div>
+                    <div id="bigWordThree">
+                        <input id="motor" type="checkbox" name="skills" value="Motor skills improvement">
+                        <label id="motor-label" for="motor">Motor skills improvement</label>
+                    </div>
+                 </div>
+                </div> 
+            </div>
+            <div class="outerClass" id="texArea">
+              <div class="labelClass"><label id="textarea-label" for="comments">Any Comments or Suggestions?</label></div>
+              <div class="inputClass">
+                  <textarea id="comments" cols="40" rows="3" placeholder=" Enter your comment here..."></textarea>
+              </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
